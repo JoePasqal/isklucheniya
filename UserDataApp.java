@@ -44,8 +44,8 @@ public class UserDataApp {
     }
 
     private static char validateGender(String gender) throws IllegalArgumentException {
-        if (!gender.equals("женский") && !gender.equals("мужской")) {
-            throw new IllegalArgumentException("Неверное значение пола. Ожидалось 'женский' или 'мужской', получено: " + gender);
+        if (!gender.equals("f") && !gender.equals("m")) {
+            throw new IllegalArgumentException("Неверное значение пола. Ожидалось 'f' или 'm', получено: " + gender);
         }
         return gender.charAt(0);
     }
