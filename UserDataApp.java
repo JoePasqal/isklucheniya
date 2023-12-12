@@ -34,18 +34,18 @@ public class UserDataApp {
     }
 
     private static String validateDate(String date) throws IllegalArgumentException {
-        // Здесь должна быть проверка формата даты dd.mm.yyyy
+        // проверка формата даты dd.mm.yyyy
         return date;
     }
 
     private static long validatePhoneNumber(String number) throws NumberFormatException {
-        // Здесь должна быть проверка номера телефона
+        //проверка номера телефона
         return Long.parseLong(number);
     }
 
     private static char validateGender(String gender) throws IllegalArgumentException {
-        if (!gender.equals("f") && !gender.equals("m")) {
-            throw new IllegalArgumentException("Неверное значение пола. Ожидалось 'f' или 'm', получено: " + gender);
+        if (!gender.equals("женский") && !gender.equals("мужской")) {
+            throw new IllegalArgumentException("Неверное значение пола. Ожидалось 'женский' или 'мужской', получено: " + gender);
         }
         return gender.charAt(0);
     }
